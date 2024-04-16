@@ -83,14 +83,13 @@ docker run -w /root -it --rm alpine:edge sh -uelic '
 - Make a backup of your current Neovim files:
 
   ```sh
-  mv ~/.config/nvim ~/.config/nvim.bak
-  mv ~/.local/share/nvim ~/.local/share/nvim.bak
+  rm -rf ~/.config/nvim ~/.local/{state,share}/nvim ~/.cache/nvim
   ```
 
 - Clone the starter
 
   ```sh
-  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  git clone https://github.com/rusl2019/starter ~/.config/nvim
   ```
 
 - Remove the `.git` folder, so you can add it to your own repo later
