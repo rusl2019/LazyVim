@@ -7,21 +7,19 @@ return {
     cmd = "Neotree",
     keys = {
       {
-        "<leader>fe",
+        "<C-n>",
         function()
           require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
         end,
         desc = "Explorer NeoTree (Root Dir)",
       },
       {
-        "<leader>fE",
+        "<C-N>",
         function()
           require("neo-tree.command").execute({ toggle = true, dir = vim.uv.cwd() })
         end,
         desc = "Explorer NeoTree (cwd)",
       },
-      { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (Root Dir)", remap = true },
-      { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
       {
         "<leader>ge",
         function()
@@ -57,6 +55,7 @@ return {
         use_libuv_file_watcher = true,
       },
       window = {
+        position = "right",
         mappings = {
           ["<space>"] = "none",
           ["Y"] = {
