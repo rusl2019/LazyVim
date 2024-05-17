@@ -211,6 +211,7 @@ return {
   -- indent guides for Neovim
   {
     "lukas-reineke/indent-blankline.nvim",
+    tag = "v3.5.4",
     event = "LazyFile",
     opts = {
       indent = {
