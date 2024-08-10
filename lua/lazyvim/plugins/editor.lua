@@ -312,6 +312,7 @@ return {
   -- with the active keybindings of the command you started typing.
   {
     "folke/which-key.nvim",
+    tag = "v2.1.0",
     event = "VeryLazy",
     opts = {
       plugins = { spelling = true },
